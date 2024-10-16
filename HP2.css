@@ -1,0 +1,111 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 배경 색상과 폰트 스타일 지정 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #D8D8D8;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    
+}
+
+header p {
+    font-family: 'Do Hyeon', sans-serif; 
+    font-size: 20px; 
+}
+
+/* 소개 섹션 스타일 */
+section {
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 50px; /* 왼쪽으로 약간 이동 */
+
+}
+
+/* 각 섹션의 제목 스타일 */
+h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Do Hyeon', sans-serif; 
+    font-size: 18px; 
+}
+
+/* 기술 목록 스타일 */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* 연락처 섹션 스타일 */
+#contact p {
+    font-size: 15px;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #D8D8D8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 캘린더 스타일 */
+#calendar {
+    position: fixed; /* 고정 위치 설정 */
+    top: 200px; /* 상단에서의 거리 */
+    right: 20px; /* 오른쪽에서의 거리 */
+    width: 400px; /* 캘린더 너비 */
+    height: auto; /* 자동 높이 */
+    background-color: #f9f9f9; /* 배경색 */
+    padding: 10px; /* 패딩 */
+    
+    border-radius: 8px; /* 둥글게 처리 */
+    
+    margin-right: 40px; /* 왼쪽으로 약간 이동 */
+
+}
+
+<img src="trashpdf.jpg" alt="PDF 아이콘" style="width: 100px; height: auto; border: 2px solid black;">
+
