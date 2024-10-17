@@ -7,7 +7,7 @@
 
 /* 배경 색상과 폰트 스타일 지정 */
 body {
-    font-family: 'Arial', sans-serif;
+   
     background-color: #f0f0f5;
     color: #333;
     line-height: 1.6;
@@ -79,22 +79,12 @@ ul li:last-child {
     font-size: 15px;
 }
 
-/* 푸터 스타일 */
-footer {
-    background-color: #D8D8D8;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 /* 캘린더 스타일 */
 #calendar {
     position: fixed; /* 고정 위치 설정 */
-    top: 200px; /* 상단에서의 거리 */
+    top: 300px; /* 상단에서의 거리 */
     right: 20px; /* 오른쪽에서의 거리 */
     width: 400px; /* 캘린더 너비 */
     height: auto; /* 자동 높이 */
@@ -107,5 +97,43 @@ footer {
 
 }
 
-<img src="trashpdf.jpg" alt="PDF 아이콘" style="width: 100px; height: auto; border: 2px solid black;">
 
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+.close-btn, .toggle-btn {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#calendar {
+    display: block; /* 기본값: 열려 있음 */
+}
+
+#new-page-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding:15px 25px;
+    font-size: 23px;
+    font-family: 'Do Hyeon', sans-serif;
+    background-color: #fecfc3; /* 버튼 배경색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#new-page-btn:hover {
+    background-color: #FF4500; /* 호버 시 색상 변화 */
+    font-family: 'Do Hyeon', sans-serif;
+
+}

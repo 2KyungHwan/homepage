@@ -16,7 +16,8 @@
 <body>
     <header>
         <h1>LeeKyungHwan</h1>
-       
+    
+            <button id="new-page-btn">구현내용</button>  
     </header>
 
     <section id="about">
@@ -66,12 +67,20 @@
         <p>Instagram: <a href="https://www.instagram.com/k._.yung.h/" target="_blank">k._.yung.h</a></p>
     </section>
     
+ 
 
-    <section id="calendar" class="fixed-calendar">
-        
-        <div id='calendar'></div>
-    </section>
     
+    <button id="toggle-btn" class="toggle-btn">Toggle Calendar</button> <!-- 토글 버튼 -->
+
+    <div id="calendar" class="calendar-container">
+        <div class="calendar-header">
+          <span>Calendar</span>
+          <button id="close-btn" class="close-btn">X</button>
+        </div>
+        <div class="calendar-body">
+        </div>
+            
+            
     <script>
     $(document).ready(function() {
         $('#calendar').fullCalendar({
