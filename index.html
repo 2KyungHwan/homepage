@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="HP2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="" />
     <title>자기소개</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' />
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
@@ -18,6 +19,7 @@
         <h1>LeeKyungHwan</h1>
     
             <button id="new-page-btn">구현내용</button>  
+            <button id="new-cat-btn">고양이</button>
     </header>
 
     <section id="about">
@@ -35,18 +37,6 @@
     </section>
 
 
-<!-- PDF 다운로드 링크 추가 -->
-    <section id="download">
-        <h2>활동내역</h2>
-
-        <p>음식물쓰레기 데이터를 통해 월별 발생량 분석
-        및 지역에 따른 정책 제안(고등학교)</p>
-        <a href="https://github.com/2KyungHwan/homepage/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%ED%86%B5%ED%95%B4%20%EC%9D%8C%EC%8B%9D%EB%AC%BC%EC%93%B0%EB%A0%88%EA%B8%B0%20%EB%B0%9C%EC%83%9D%EB%9F%89%EC%9D%84%20%EB%B6%84%EC%84%9D%ED%95%98%EA%B3%A0.docx.pdf" download>
-        <img src="trashpdf.jpg" alt="PDF 아이콘" style="width: 300px; height: auto; border: 2px solid red;">
-
-        </a>
-        <p>위 이미지를 클릭하여 PDF 파일을 다운로드하세요.</p>
-    </section>
 
     <section id="skills">
         <h2>Hobby</h2>
@@ -67,14 +57,26 @@
         <p>Instagram: <a href="https://www.instagram.com/k._.yung.h/" target="_blank">k._.yung.h</a></p>
     </section>
     
- 
+    <!-- PDF 다운로드 링크 추가 -->
+    <section id="download">
+        <h2>활동내역</h2>
+
+        <p>음식물쓰레기 데이터를 통해 월별 발생량 분석
+        및 지역에 따른 정책 제안(고등학교)</p>
+        <a href="https://github.com/2KyungHwan/homepage/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%ED%86%B5%ED%95%B4%20%EC%9D%8C%EC%8B%9D%EB%AC%BC%EC%93%B0%EB%A0%88%EA%B8%B0%20%EB%B0%9C%EC%83%9D%EB%9F%89%EC%9D%84%20%EB%B6%84%EC%84%9D%ED%95%98%EA%B3%A0.docx.pdf" download>
+        <img src="trashpdf.jpg" alt="PDF 아이콘" style="width: 300px; height: auto; border: 2px solid red;">
+
+        </a>
+        <p>위 이미지를 클릭하여 PDF 파일을 다운로드하세요.</p>
+    </section>
+
 
     
-    <button id="toggle-btn" class="toggle-btn">Toggle Calendar</button> <!-- 토글 버튼 -->
+    <button id="toggle-btn" class="toggle-btn">Toggle Calendar</button> 
 
     <div id="calendar" class="calendar-container">
         <div class="calendar-header">
-          <span>Calendar(달력을 클릭하여 일정 추가/삭제하세요)</span>
+          <span>Calendar(달력을 클릭해 일정 추가/삭제하세요)</span>
           <button id="close-btn" class="close-btn">X</button>
         </div>
         <div class="calendar-body">

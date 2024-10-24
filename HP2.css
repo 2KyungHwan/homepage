@@ -1,3 +1,10 @@
+#root {
+    width: 100vw; /* 전체 뷰포트 너비 */
+    height: 100vh; /* 전체 뷰포트 높이 */
+    overflow: hidden; /* 넘치는 내용 숨기기 */
+}
+
+
 /* 기본 스타일 초기화 */
 * {
     margin: 0;
@@ -5,7 +12,7 @@
     box-sizing: border-box;
 }
 
-/* 배경 색상과 폰트 스타일 지정 */
+/*제일 위에 제목 이름 */
 body {
    
     background-color: #f0f0f5;
@@ -14,7 +21,7 @@ body {
     font-family: 'Do Hyeon', sans-serif;
 }
 
-/* 헤더 스타일 */
+/* 제일 위에 배경 색 */
 header {
     background-color: #D8D8D8;
     color: rgb(0, 0, 0);
@@ -58,23 +65,9 @@ p {
     font-size: 18px; 
 }
 
-/* 기술 목록 스타일 */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-ul li {
-    font-size: 18px;
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-}
 
-ul li:last-child {
-    border-bottom: none;
-}
-
-/* 연락처 섹션 스타일 */
+  /* 연락처 */
 #contact p {
     font-size: 15px;
 }
@@ -83,21 +76,21 @@ ul li:last-child {
 
 /* 캘린더 스타일 */
 #calendar {
-    position: fixed; /* 고정 위치 설정 */
-    top: 300px; /* 상단에서의 거리 */
-    right: 20px; /* 오른쪽에서의 거리 */
-    width: 400px; /* 캘린더 너비 */
-    height: auto; /* 자동 높이 */
-    background-color: #f9f9f9; /* 배경색 */
-    padding: 10px; /* 패딩 */
+    position: fixed;
+    top: 300px; 
+    right: 20px;
+    width: 400px; 
+    height: 500px; 
+    background-color: #f9f9f9;
+    padding: 10px; 
     
-    border-radius: 8px; /* 둥글게 처리 */
+    border-radius: 8px; 
     
-    margin-right: 40px; /* 왼쪽으로 약간 이동 */
+    margin-right: 40px; 
 
 }
 
-
+/* 캘린더 스타일 */
 .calendar-header {
     display: flex;
     justify-content: space-between;
@@ -105,17 +98,15 @@ ul li:last-child {
     font-size: 18px;
     font-weight: bold;
   }
-
+/* 캘린더 닫기버튼 */
 .close-btn, .toggle-btn {
   border: none;
   padding: 5px;
   cursor: pointer;
 }
 
-#calendar {
-    display: block; /* 기본값: 열려 있음 */
-}
 
+/* 새로운 페이지 */
 #new-page-btn {
     position: absolute;
     top: 30px;
@@ -123,7 +114,7 @@ ul li:last-child {
     padding:15px 25px;
     font-size: 23px;
     font-family: 'Do Hyeon', sans-serif;
-    background-color: #fecfc3; /* 버튼 배경색 */
+    background-color: #fecfc3; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -131,9 +122,33 @@ ul li:last-child {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
-
+/* 커서 올리면 색 바꾸기  */
 #new-page-btn:hover {
-    background-color: #FF4500; /* 호버 시 색상 변화 */
+    background-color: #FF4500; 
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+
+
+/* 새로운 페이지 */
+#new-cat-btn {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    padding:15px 34px;
+    font-size: 23px;
+    font-family: 'Do Hyeon', sans-serif;
+    background-color: #fecfc3; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+/* 커서 올리면 색 바꾸기  */
+#new-cat-btn:hover {
+    background-color: #FF4500; 
     font-family: 'Do Hyeon', sans-serif;
 
 }

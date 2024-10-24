@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('자기소개 홈페이지가 로드되었습니다.');
 
-    
     const calendarElement = $('#calendar');
     const correctPassword = '1111'; // 비밀번호 설정
     // 로컬 스토리지에서 일정 불러오기
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 캘린더 열고 닫기 토글 기능
     document.getElementById('toggle-btn').addEventListener('click', function() {
         const calendar = document.getElementById('calendar');
-        if (calendar.style.display ='none') {
+        if (calendar.style.display === 'none') { // 수정된 부분
             calendar.style.display = 'block'; // 닫혀 있으면 열기
             $('#calendar').fullCalendar('render'); // 캘린더 다시 렌더링
         } else {
@@ -71,10 +70,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // X 버튼을 클릭하면 캘린더를 닫음
     document.getElementById('close-btn').addEventListener('click', function() {
         document.getElementById('calendar').style.display = 'none';
-        
     });
-});
-// 새 페이지 버튼 클릭 시 새로운 페이지로 이동
-document.getElementById('new-page-btn').addEventListener('click', function() {
-    window.location.href = 'index2.html'; // 새로운 페이지로 이동 (index2.html 파일로 이동)
+
+    // 새 페이지 버튼 클릭 시 새로운 페이지로 이동
+    document.getElementById('new-page-btn').addEventListener('click', function() {
+        window.location.href = 'index2.html'; // 새로운 페이지로 이동
+    });
+
+    // 새 고양이 페이지 버튼 클릭 시 새로운 페이지로 이동
+    document.getElementById('new-cat-btn').addEventListener('click', function() {
+        window.location.href = 'index3.html'; // 새로운 페이지로 이동
+    });
+
+    // 화면 크기 조정 함수 호출 (예시로 표준 해상도를 1920x1080으로 설정)
+    const standardWidth = 1920;
+    const standardHeight = 1080;
+    const resizeHandler = getResizeEventListener(standardWidth, standardHeight);
+    resizeHandler(); // 초기 화면 크기 조정
+
+    // 창 크기 변경 시 크기 조정
+    window.addEventListener('resize', resizeHandler);
 });
