@@ -7,40 +7,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            font-family: 'Do Hyeon', sans-serif;
+            background-color: #f0f4f8;
             margin: 0;
-            padding: 20px;
+            padding: 0 20px;
         }
+
         h1 {
             text-align: center;
             color: #333;
+            margin-top: 20px;
         }
+
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3개의 칼럼 고정 */
+            gap: 20px;
+            padding: 20px 0;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
         .cat-card {
             border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 10px;
+            border-radius: 10px;
+            padding: 15px;
             background-color: #fff;
             text-align: center;
-            width: 200px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
+
+        .cat-card:hover {
+            transform: scale(1.05);
+        }
+
         .cat-card img {
             width: 100%;
-            border-radius: 5px;
+            border-radius: 10px;
+            height: 400px;
+            object-fit: cover;
         }
-        
+
         /* 돌아가기 버튼 스타일 */
         .back-btn {
             position: absolute;
-            font-family: 'Do Hyeon', sans-serif;
-            top: 30px;
-            left: 30px;
+            top: 20px;
+            left: 20px;
             background-color: #fecfc3;
             color: white;
             border: none;
@@ -48,49 +61,63 @@
             cursor: pointer;
             font-size: 23px;
             border-radius: 5px;
+            font-family: 'Do Hyeon', sans-serif;
         }
 
         .back-btn:hover {
             background-color: #FF4500;
         }
 
-    </style>
+    /* 기타 스타일 */
+    
+</style>
+
+    
 </head>
 <body>
 
+    <button class="back-btn" onclick="window.location.href='index.html'">돌아가기</button>
     <h1>우리 고양이 소개 앨범</h1>
     
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="cat-card">
-            <img src="cat1.jpg" alt="고양이 1">
-            <h2>고양이 이름 1</h2>
-            <p>나이: 2세</p>
-            <p>품종: Persian</p>
+            <img src="cat1.jpg.png" alt="고양이 1">
+            <p>2022.10.7</p>
         </div>
         <div class="cat-card">
             <img src="cat2.jpg" alt="고양이 2">
-            <h2>고양이 이름 2</h2>
-            <p>나이: 3세</p>
-            <p>품종: Maine Coon</p>
+            <p>2022.11.27</p>
         </div>
         <div class="cat-card">
             <img src="cat3.jpg" alt="고양이 3">
-            <h2>고양이 이름 3</h2>
-            <p>나이: 1세</p>
-            <p>품종: British Shorthair</p>
+            <p>2022.10.7</p>
         </div>
-        <!-- 더 많은 고양이 카드 추가 가능 -->
+        <div class="cat-card">
+            <img src="cat4.jpg" alt="고양이 4">
+            <p>2023.1.7</p>
+        </div>
+        <div class="cat-card">
+            <img src="cat5.jpg" alt="고양이 5">
+            <p>2023.1.15</p>
+        </div>
+        <div class="cat-card">
+            <img src="cat6.jpg" alt="고양이 6">
+            <p>2023.4.3</p>
+        </div>
+        <div class="cat-card">
+            <img src="cat7.jpg" alt="고양이 7">
+            <p>2023.8.25</p>
+        </div>
+        <div class="cat-card">
+            <img src="cat8.jpg" alt="고양이 8">
+            <p>2023.11.19</p>
+        </div>
+        <div class="cat-card">
+            <img src="cat9.jpg" alt="고양이 9">
+            <p>2024.8.7</p>
+        </div>
     </div>
 
-
-    <body>
-        <!-- 돌아가기 버튼-->
-        <header>
-            <button class="back-btn" onclick="window.location.href='index.html'">돌아가기</button>
-            <h1>LeeKyungHwan</h1>
-            
-        </header>
     
 </body>
 </html>
-
